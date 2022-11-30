@@ -1,0 +1,16 @@
+.currency_container {
+  position: absolute;
+  background-color: white;
+  top: 44px;
+  left: 0;
+  width: 100px;
+  height: 180px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.currency {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 7px 15px;
+  cursor: pointer;
+}

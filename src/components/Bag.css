@@ -1,0 +1,32 @@
+.bag_container {
+  background-color: white;
+  position: absolute;
+  top: 44px;
+  right: 20px;
+  width: 329px;
+  height: 500px;
+  z-index: 1;
+}
+.bag_title {
+  display: flex;
+  margin-bottom: 10px;
+}
+.bag_title > h3 {
+  margin: 0 0 0 7px;
+  font-weight: bold;
+}
+.bag_title > span {
+  padding-top: 3px;
+}
+.bag_scroll {
+  overflow-y: scroll;
+}
+.bag_total {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+}
+.bag_total > h3 {
+  font-weight: bold;
+}

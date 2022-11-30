@@ -1,0 +1,23 @@
+.gallery_container {
+  position: relative;
+}
+.gallery_left {
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  cursor: pointer;
+}
+.gallery_right {
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 45px;
+  right: 0;
+  cursor: pointer;
+}
+.gallery_container > img {
+  width: 107px;
+  height: 142px;
+}

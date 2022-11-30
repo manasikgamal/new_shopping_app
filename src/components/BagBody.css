@@ -1,0 +1,43 @@
+.bagbody_top {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.bagbody_left > h3 {
+  margin: 0 0 7px 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+.bagbody_left {
+  width: 155px;
+}
+.bagbody_plus {
+  font-size: 18px;
+  border: 1px solid black;
+  padding: 2px 6px;
+  cursor: pointer;
+}
+.bagbody_minus {
+  font-size: 18px;
+  border: 1px solid black;
+  padding: 2px 6px;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+.bagbody_count {
+  margin: 30px 5px;
+}
+.bagbody_choose > p {
+  margin: 5px 5px;
+  font-size: 14px;
+  border: 1px solid black;
+  padding: 5px;
+}
+.bagbody_choose {
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,25 @@
+.desc_left {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.desc_left > img {
+  width: 81px;
+  height: 82px;
+  margin: 3px;
+  cursor: pointer;
+}
+.desc_main > img {
+  max-width: 100%;
+}
+@media (max-width: 770px) {
+  .desc_left {
+    flex-direction: row;
+  }
+  .desc_img_container {
+    flex-direction: column-reverse;
+  }
+}
+.desc_img_container {
+  display: flex;
+}
