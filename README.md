@@ -1,3 +1,6 @@
+# Backend
+go to https://github.com/scandiweb/junior-react-endpoint for backend code
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
