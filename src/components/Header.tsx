@@ -23,7 +23,7 @@ interface Props {
   header: headerstate;
   navigate: NavigateFunction;
   wrapperRef: RefObject<HTMLDivElement>;
-  currencySymbol: (name: string) => void;
+  currencySymbol: (currency_name: cstate) => void;
   currencytype?: cstate;
   CurrencyRef: RefObject<HTMLDivElement>;
 }
