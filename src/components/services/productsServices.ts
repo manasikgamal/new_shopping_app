@@ -23,7 +23,10 @@ export const fetchData = (title: string) => async (dispatch: Dispatch) => {
                     category
                     gallery
                     prices {
-                        currency
+                        currency{
+                          label
+                          symbol
+                        }
                         amount
                        } 
                        attributes{
