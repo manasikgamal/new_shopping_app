@@ -81,7 +81,7 @@ class Header extends Component<Props, MyState> {
     this.props.currencySymbol(
       localStorage.getItem("currency")
         ? JSON.parse(localStorage.getItem("currency") || "")
-        : "USD"
+        : {"label": "USD","symbol": "$"}
     );
     this.props.fetchCartitems();
   }
