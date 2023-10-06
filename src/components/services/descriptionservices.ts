@@ -30,7 +30,7 @@ export interface ItemSet {
   value: string;
 }
 export interface price {
-  currency: string
+  currency: cstate
   amount: number
 }
 export interface RootState {
