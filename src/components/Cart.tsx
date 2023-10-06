@@ -24,7 +24,7 @@ class Cart extends Component<Cprops, {}> {
     const { cartitems } = this.props;
     return (
       <div className="cart_try">
-        {cartitems.map((item, index) => (
+        {cartitems.length==0? <p className="senBag">THE BAG IS EMPTY</p>:cartitems.map((item, index) => (
           <div key={index} className="cart_container">
             <div className="cart_left">
               <h3>{item.name}</h3>
