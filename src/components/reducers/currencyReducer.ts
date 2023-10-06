@@ -16,13 +16,13 @@ export const currencyReducer = (state: string[] = [], action: currencyAction | A
 //////////////////////////////////////////////////
 export interface cstate {
   symbol: string,
-  name: string
+  label: string
 }
 export interface symbolAction {
   type: ActionTypes.currencySymbolAction,
   payload: string
 }
-export const currencySymbolReducer = (state: cstate = { symbol: "", name: "" }, action: symbolAction | AnyAction) => {
+export const currencySymbolReducer = (state: cstate = { symbol: "", label: "" }, action: symbolAction | AnyAction) => {
   switch (action.type) {
     case ActionTypes.currencySymbolAction:
       return action.payload;
