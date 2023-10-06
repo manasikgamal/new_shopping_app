@@ -38,7 +38,7 @@ export interface RootState {
   description: Descriptioninterface;
   message: mstate
   cartitems: Descriptioninterface[];
-  currencies: string[];
+  currencies: cstate[];
   header: headerstate;
   currencytype: cstate
 }
