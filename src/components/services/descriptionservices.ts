@@ -66,7 +66,10 @@ export const fetchDescription = (id: string) => async (dispatch: Dispatch) => {
                 gallery
                 description
                 prices {
-                  currency
+                  currency{
+                    label
+                    symbol
+                  }
                   amount
                 }
                 attributes{
