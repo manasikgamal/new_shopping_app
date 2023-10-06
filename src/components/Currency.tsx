@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import "./Currency.css";
 import { cstate } from "./reducers/currencyReducer";
 import {
-  currencylocalSymbol,
   currencySymbol,
   getCurrencies,
 } from "./services/currencyservices";
@@ -11,8 +10,8 @@ import { RootState } from "./services/descriptionservices";
 
 interface Pcurrency {
   getCurrencies: () => void;
-  currencies: string[];
-  currencySymbol: (name: string) => void;
+  currencies?: cstate[];
+  currencySymbol: (currency_name:cstate) => void;
   currencytype: cstate;
 }
 
@@ -24,13 +23,13 @@ class Currency extends Component<Pcurrency, {}> {
     const { currencies } = this.props;
     return (
       <div className="currency_container">
-        {currencies.map((x, index) => (
+        {currencies&&currencies.map((x, index) => (
           <div
             key={index}
             onClick={() => this.props.currencySymbol(x)}
             className="currency"
           >
-            {currencylocalSymbol(x)} {x}
+           {x.symbol} {x.label}
           </div>
         ))}
       </div>
