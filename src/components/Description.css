@@ -40,6 +40,7 @@
   font-size: 20px;
   background-color: rgb(62, 231, 113);
   margin: 20px 0;
+  cursor: pointer;
 }
 .color_item {
   width: 25px;
