@@ -3,7 +3,7 @@ import { ActionTypes } from "../actions/types";
 
 export interface currencyAction {
   type: ActionTypes.fetchCurrency,
-  payload: string[]
+  payload: cstate
 }
 export const currencyReducer = (state: cstate[]=[], action: currencyAction | AnyAction) => {
   switch (action.type) {
