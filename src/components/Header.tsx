@@ -52,6 +52,9 @@ class Header extends Component<Props, MyState> {
     }
     this.props.navigate("/");
   };
+  nonColor=()=>{
+    this.setState({ active: 0 });
+  }
   componentDidMount() {
     const { fetchData } = this.props;
     const handleClickOutside = (event: any) => {
@@ -150,6 +153,7 @@ class Header extends Component<Props, MyState> {
                     onClick={() => {
                       this.props.navigate("/cart");
                       this.props.toggleBagButton(true);
+                      this.nonColor();
                     }}
                   >
                     VIEW BAG
