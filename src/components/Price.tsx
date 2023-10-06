@@ -14,7 +14,7 @@ class Price extends Component<PProps,{}> {
     const {currencytype}=this.props;
     return (
       <div>
-       {prices&&prices.map((p,index)=>p.currency===currencytype?.label&&<div key={index}>{currencytype.symbol}{p.amount}</div>)}
+       {prices&&prices.map((p,index)=>p.currency.label===currencytype?.label&&<div key={index}>{currencytype.symbol}{p.amount}</div>)}
       </div>
     )
   }
