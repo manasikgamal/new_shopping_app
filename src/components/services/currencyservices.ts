@@ -1,6 +1,7 @@
 import { Dispatch } from "@reduxjs/toolkit";
 import axios from "axios";
 import { ActionTypes } from "../actions/types";
+import { cstate } from "../reducers/currencyReducer";
 
 export const currencySymbol = (currency_name: cstate) => (dispatch: Dispatch) => {
         dispatch({
