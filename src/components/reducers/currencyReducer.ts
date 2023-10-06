@@ -5,7 +5,7 @@ export interface currencyAction {
   type: ActionTypes.fetchCurrency,
   payload: string[]
 }
-export const currencyReducer = (state: string[] = [], action: currencyAction | AnyAction) => {
+export const currencyReducer = (state: cstate[]=[], action: currencyAction | AnyAction) => {
   switch (action.type) {
     case ActionTypes.fetchCurrency:
       return action.payload.data.currencies;
