@@ -21,3 +21,9 @@
 .cart_name {
   padding-top: 10px;
 }
+.senBag{
+  font-size: large;
+  display: flex;
+ justify-content: center;
+ padding: 10px;
+}
