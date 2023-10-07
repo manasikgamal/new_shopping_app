@@ -15,7 +15,7 @@ class Price extends Component<PProps,{}> {
     return (
       <div>
        {prices&&prices.map((p,index)=>p.currency.label===currencytype?.label&&<div key={index}>{currencytype.symbol}
-           {new Intl.NumberFormat().format(p.amount)</div>)}
+           {new Intl.NumberFormat().format(p.amount)}</div>)}
       </div>
     )
   }
