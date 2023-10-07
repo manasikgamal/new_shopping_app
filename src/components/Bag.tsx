@@ -49,9 +49,9 @@ class Bag extends Component<Bprops, {}> {
           <h3>Total</h3>
           <h3>
             {currencytype.symbol}
-            {cartitems
-              .reduce((a, c) => a + c.prices[0].amount * c.count, 0)
-              .toFixed(2)}
+            {new Intl.NumberFormat().format(cartitems
+            .reduce((a, c) => a + c.prices[cartitems.map(n=>n.prices.findIndex(p=>p.currency.label===this.props.currencytype.label))[0]]
+              .amount * c.count, 0))}
           </h3>
         </div>
       </div>
